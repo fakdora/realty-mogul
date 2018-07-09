@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Divider } from 'semantic-ui-react'
 
 import Content from './Content'
 
@@ -14,7 +15,10 @@ class ContentList extends Component {
         {
           (contents)
             ? contents.map(content => (
+              <div>
                 <Content key={content.id} content={content} />
+                <Divider />
+              </div>
               ))
             : null
         }
