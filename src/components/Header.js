@@ -29,11 +29,10 @@ function Header({ headerData, showContent, handleButtonClick }) {
           </Grid.Column>
           <Grid.Column>
           <Segment basic vertical={true} className="header-segment">
-              <Button icon onClick={handleButtonClick}>
-                {showContent ?
-                  <Icon name='minus' /> :
-                  <Icon name='plus' />}
-              </Button>
+            {showContent
+              ? <Icon name="minus" circular color="black" onClick={handleButtonClick}/>
+              : <Icon name="plus" circular inverted color="teal" onClick={handleButtonClick} />
+              }
             </Segment>
           </Grid.Column>
       </Grid>
