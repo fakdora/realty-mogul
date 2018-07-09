@@ -2,10 +2,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 16em;
 }
 
+.App {
+  margin-top: 3em;
+}
+
+.content-block {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.header-segment {
+  text-align: center;
+  font-size:16px;
+}
 
 .panel-block {
-  width: 200px;
-  height: 200px;
+  min-height:100px;
+  min-width: 50%;  
+}
+
+.panel-data {
+  text-align: center;
+  font-size: 18px;
 }

@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
+import App from './components/App'
+import registerServiceWorker from './registerServiceWorker'
 import reducer from './reducers'
 import { contents as contentsData } from './utils/_DATA'
-import './index.css';
+import './index.css'
+import 'semantic-ui-css/semantic.min.css'
 
 
 const store = createStore(reducer, {contents: contentsData})
@@ -16,5 +17,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App /> 
   </Provider>, 
-  document.getElementById('root'));
-registerServiceWorker();
+  document.getElementById('root'))
+registerServiceWorker()
