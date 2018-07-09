@@ -15,8 +15,8 @@ class ContentList extends Component {
         {
           (contents)
             ? contents.map(content => (
-              <div>
-                <Content key={content.id} content={content} />
+              <div key={content.id} >
+                <Content content={content} />
                 <Divider />
               </div>
               ))
