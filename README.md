@@ -16,4 +16,5 @@ yarn start
   - Used grid layout to display data in equally divided columns
   - Used icons
 * Redux
-  - Made main component to listen to state changes of Data
+  - Didn't really need redux as main Data is from a static file, but
+    mapped main component to redux state changes to show what it should do in normal situations.
