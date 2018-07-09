@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid } from 'semantic-ui-react'
 
 
-function Panel({panelData, userClickHandler, visibility}) {
+function Panel({ panelData, userClickHandler, visibility }) {
     return (
       <Grid.Column width={8}>
         <div

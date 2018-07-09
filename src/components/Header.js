@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  Button,
-  Grid,
-  Icon,
-  Segment,
-} from 'semantic-ui-react'
+import { Grid, Icon, Segment } from 'semantic-ui-react'
 
 
 function Header({ headerData, showContent, handleButtonClick }) {
@@ -30,8 +25,12 @@ function Header({ headerData, showContent, handleButtonClick }) {
           <Grid.Column>
           <Segment basic vertical={true} className="header-segment">
             {showContent
-              ? <Icon name="minus" circular color="black" onClick={handleButtonClick}/>
-              : <Icon name="plus" circular inverted color="teal" onClick={handleButtonClick} />
+              ? <Icon name="minus" 
+                  circular color="black" 
+                  onClick={handleButtonClick}/>
+              : <Icon name="plus" circular 
+                  inverted color="teal" 
+                  onClick={handleButtonClick} />
               }
             </Segment>
           </Grid.Column>
