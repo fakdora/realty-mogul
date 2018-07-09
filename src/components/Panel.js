@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
-function Panel(panelData, userClickHandler, visibility) {
+function Panel({panelData, userClickHandler, visibility}) {
     return (
       <div
         style={{ backgroundColor: visibility ? "#FFFFFF" : '#EEEEEE' }}
