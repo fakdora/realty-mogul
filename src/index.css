@@ -3,3 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+.panel-block {
+  width: 200px;
+  height: 200px;
+}
